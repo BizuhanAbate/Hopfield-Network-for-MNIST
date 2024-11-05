@@ -4,6 +4,10 @@ This project implements a Hopfield Network to recall digit patterns from the MNI
 the network is trained to store a set of representative digit patterns (0-9). 
 It then attempts to reconstruct these patterns from noisy input versions by iteratively updating neuron states.
 
+## Introduction
+
+A Hopfield Network is a recurrent artificial neural network that can store patterns and retrieve them based on partial or noisy inputs. 
+This project aims to store 10 distinct digit patterns (from the MNIST dataset) and test if the network can recall the original patterns even when given distorted versions of those patterns.
 Hopfield Networks have several applications, particularly in the following areas:
 
    - `Associative Memory` : They can store and retrieve patterns, making them useful for associative memory tasks. They can recall a stored pattern even when presented with a noisy or incomplete version of it.
@@ -30,11 +34,6 @@ While Hopfield Networks are useful in associative memory and optimization, have 
  - `Symmetric Weights Requirement` : Hopfield Networks require symmetric weights, limiting their usefulness in tasks that benefit from asymmetric connections.
 
  - `No Hidden Layers` : With only a single layer, they lack the depth needed to learn complex patterns, limiting them to simpler tasks.
-
-## Introduction
-
-A Hopfield Network is a recurrent artificial neural network that can store patterns and retrieve them based on partial or noisy inputs. 
-This project aims to store 10 distinct digit patterns (from the MNIST dataset) and test if the network can recall the original patterns even when given distorted versions of those patterns.
 
 ## How It Works
 
