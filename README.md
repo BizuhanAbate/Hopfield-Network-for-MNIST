@@ -42,9 +42,7 @@ This project aims to store 10 distinct digit patterns (from the MNIST dataset) a
    - The MNIST dataset is loaded, and 10 unique digit patterns (0 to 9) are extracted and binarized for use.
    
 2. Network Training:
-   - The network’s weight matrix is initialized based on the Hebbian learning rule:
-
-      - w[i, j] = Σ ((P[i, k] * P[j, k]) / P.shape[1])
+   - The network’s weight matrix is initialized based on the Hebbian learning rule.
 
    - Each neuron's self-weight (diagonal of the weight matrix) is set to zero to prevent self-feedback.
    
