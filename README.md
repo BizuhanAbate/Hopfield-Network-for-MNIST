@@ -6,17 +6,17 @@ It then attempts to reconstruct these patterns from noisy input versions by iter
 
 Hopfield Networks have several applications, particularly in the following areas:
 
-   - Associative Memory: they can store and retrieve patterns, making them useful for associative memory tasks. They can recall a stored pattern even when presented with a noisy or incomplete version of it.
+   - `Associative Memory` : They can store and retrieve patterns, making them useful for associative memory tasks. They can recall a stored pattern even when presented with a noisy or incomplete version of it.
 
-   - Optimization Problems: they can be used to solve optimization problems, such as the traveling salesman problem. They can find solutions by searching for low-energy states that represent optimal configurations.
+   - `Optimization Problems` : They can be used to solve optimization problems, such as the traveling salesman problem. They can find solutions by searching for low-energy states that represent optimal configurations.
 
-   - Pattern Recognition: they can recognize patterns in data, making them applicable in image and speech recognition tasks where patterns need to be identified despite noise or distortion.
+   - `Pattern Recognition` : They can recognize patterns in data, making them applicable in image and speech recognition tasks where patterns need to be identified despite noise or distortion.
 
-   - Content Addressable Memory: they provide content addressable memory, allowing data retrieval based on partial inputs rather than specific addresses, useful in database searching and retrieval systems.
+   - `Content Addressable Memory` : They provide content addressable memory, allowing data retrieval based on partial inputs rather than specific addresses, useful in database searching and retrieval systems.
 
-   - Robotics: In robotics, they can be used for path planning and decision-making, helping robots learn from past experiences and navigate environments efficiently.
+   - `Robotics` : In robotics, they can be used for path planning and decision-making, helping robots learn from past experiences and navigate environments efficiently.
 
-   - Signal Processing: they can be applied in signal processing tasks for filtering and denoising, as they can retrieve clean signals from corrupted versions.
+   - `Signal Processing` : They can be applied in signal processing tasks for filtering and denoising, as they can retrieve clean signals from corrupted versions.
 
 While Hopfield Networks are useful in associative memory and optimization, have several limitations:
  - `Limited Capacity` : They can store only a small number of patterns reliably. With too many patterns, the network risks spurious states and performance drops.
@@ -43,9 +43,12 @@ This project aims to store 10 distinct digit patterns (from the MNIST dataset) a
    
 2. Network Training:
    - The network’s weight matrix is initialized based on the Hebbian learning rule:
-     \[
-     w[i, j] = \sum \left( \frac{P[i, k] \times P[j, k]}{P.shape[1]} \right)
-     \]
+
+      - w[i,j]=∑( 
+          P.shape[1]
+          P[i,k]×P[j,k]
+​
+                )
    - Each neuron's self-weight (diagonal of the weight matrix) is set to zero to prevent self-feedback.
    
 3. Pattern Recall:
